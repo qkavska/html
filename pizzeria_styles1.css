@@ -1,4 +1,4 @@
-* {
+ html {
   scroll-behavior: smooth;
   box-sizing: inherit;
 }
@@ -7,51 +7,51 @@
     box-sizing: border-box;
   }
 
-
-  /* body {
-   
+  body {
+  width: auto;
+  
+}
+    
+  .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 100px;
+    margin-top:10px;
 
   }
-    */
-
-header{
-    position:absolute;
-    padding:20px;
-    font-family: 'dancing script', cursive;
-    max-width: 600px;
-    /* display:flex; */
+  .navbar-menu{
+    display:flex;
+    gap: 20px;
     
   }
-  
-  .menu{
+  .navbar-menu ul li {
+    display: flex;
+    padding: 10px;
     float:left;
-    width: 200%;
-    text-align: left;
+    margin-left: 100px;
     
-  }
-  .menu ul li {
-    display: inline-block;
-    padding-right: 40px;
   
   }
 
-  .menu ul li a {
+  .navbar-menu a {
     color:black;
     font-weight: 600;
     font-size:1.8rem;
+    font-family:"dancing script", cursive;
+    transition: color 0.3 ease;
   }
 
-    .menu ul li a:hover{
-  color: #FFD77F;
+    .navbar-menu a:hover{
+    color: #FFD77F;
   
 }
 
-
-  /* .logo{
-    background-image: url("zdjecia/pizza-4856747_960_720.jpg");
-    display: flex;
-    align-items: center; */
-    
+  .navbar-logo img{
+    height: 200px;
+   
+  }
 
   .clearfix::after{
     content: "";
@@ -61,9 +61,7 @@ header{
   
   .container{
     display:table;
-    background-image: url(https://cdn.pixabay.com/photo/2012/05/07/11/11/gingham-48107_960_720.png);
-    
-    
+      
   }
 
    .container .box{
@@ -71,7 +69,7 @@ header{
     padding: 20px;
     width: 33.3%;
     text-align: center;
-    font-size: 1.rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     
@@ -104,14 +102,15 @@ header{
     float:left;
     height: 100%;
     font-family: 'dancing script', cursive;
-    font-size: 1.8rem;
+    font-size: 48px;
     text-align: center;
     font-weight: 600;
   
   }
 
   .slider-half-item article{
-    margin:2rem;
+    margin: 20px;
+  
   }
 
   .slider-half-item article .button-section{
@@ -127,15 +126,16 @@ header{
 
   .order-button, .reserve-button{
     color: red;
-    border:2px red;
+   
   }
   .order-button:hover, .reserve-button:hover{
     color: #FFD77F;
-    text-decoration: underline;
+    text-decoration: none;
 
   }
   .text{
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 1.4rem;
     font-family: "dancing script", cursive;
     color: #009900;
@@ -149,7 +149,7 @@ header{
     background-position: center center;
   }
 
-  .menu-napis, .o-nas, .blog, .kontakt{
+  .title {
     margin-top:20px;
     margin-bottom: 20px;
     padding:10px;
@@ -157,29 +157,81 @@ header{
     font-size: 2.2rem;
     font-family: "dancing script", cursive;
     font-weight: 600;
+    text-decoration: underline;
     
   }
   
-  .text2 {
+  .o-nas-section {
     display:flex;
-    padding: 0 150px;
-    
-  
-  }
-  .text2 p {
-    margin-top: 20px;
+    padding: 15px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left:10px;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: "dancing script", cursive;
     color: #009900;
-    width: 50%;
+    width: 70%;
+    background-color: white;
+    
     
   }
 
-  .text2 img{
+  .o-nas-section img{
+    float:left;
     width: 400px;
     position:absolute;
-    right: 200px;
+    right: 40px;
+    margin-top: -50px;
+    background-color: white;
    
   }
- 
+
+  .container2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    gap:10px;
+    align-items:center;
+    padding: 10px;
+  }
+
+
+  .gallery img{
+    max-width: 30%;
+    position:relative;
+    box-sizing: initial;
+    
+  }
+
+  .footer{
+    width: 100%;
+    font-family: "dancing script", cursive;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer ul li {
+    float:left;
+    list-style-type: none;
+  }
+
+  .footer a{
+    text-decoration: none;
+    justify-content: space-between;
+    font-size:1.5rem;
+    color:black;
+    padding: 15px;
+  }
+
+  .footer a:hover{
+    color: #FFD77F;
+    text-decoration: none;
+  }
