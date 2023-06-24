@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #007F00;
+    color: #fff;
+    padding: 20px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 18px;
+    
+  }
+  
+  header h1 {
+    margin-left:20px;
+  }
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .logo{
+    display: flex;
+    align-items: center;
+
+  }
+  .logo img{
+    width: 200px;
+    margin-left: 10px;
+    
+  }
+  .hero {
+    background-image: url('zdjecia/istockphoto-589415708-612x612.jpg');
+    background-size:cover;
+    text-align: center;
+    padding: 100px; 
+    }
+
+  .hero h2 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color:#007F00;
+    opacity: 50%;
+    padding: 5px;
+    
+  }
+  
+  .container{
+    max-width: auto;
+    margin: 0 auto;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #products {
+    padding: 20px;
+   
+  }
+  
+  #products h2, #contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .product {
+    border: 2px solid #007F00;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width:25%;
+    box-sizing:border-box;
+  }
+  
+  .product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product p {
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #333;
+  }
+  
+  .btn{
+    color: white;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 5px;
+    background-color: #007F00;
+    
+  }
+  #contact{
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+}
+
+
+#contact ul li {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+#contact ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+  footer {
+    background-color: #007F00;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}  
