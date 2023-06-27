@@ -1,120 +1,143 @@
 
-header, main, section, nav, article {
-    display:block;
+html, body {
+height: 100%;
+margin:0;
+padding: 0;
 }
 
-#header{
-    background-color: lightgray;
-}
 
-.list li{
-    display: inline;
+.naglowek{
+font-size:24px;
+padding: 40px;
+border: 2px solid black;
+background-image: url(zdjecia/istockphoto-1414802501-612x612.jpg);
+background-repeat: no-repeat;
+background-size:cover;
     
 }
-.list a{
-    color:white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+
+.naglowek h2 {
+font-size: 44px;
+color:#333;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.pierwsze{
-    margin:auto;
-    text-align: center;
-    font-family:Arial;
-    font-size:24px;
-    padding: 60px;
-    border: 2px solid black;
-}
+.strona{
+display: flex;
 
-
-.drugie{
-    margin:auto;
-    font-family:Arial;
-    font-size:medium;
-    padding: 10px;
-    text-align: center;
-    background-color: lightgray;
-}
-.drugie ul{
-
-}
-
-.drugie a:hover, aside a:hover{
-    text-shadow: 2px 2px 10px black;
 }
 .aside{
-    height: 100%;  
-    width: 200px;
-    float:left;
-    background-color: gray;
-    padding:20px;
-   position:fixed;
-        
-}
-.aside a {
-    display:block;
-    text-decoration: none;
-    font-family: arial;
-    font-size: 24px;
-    padding: 10px;
-    position:relative;
-    width: 30%;
-    }
+width: 20%;
+height: 100%;
+float:left;
+display: flex;
+box-sizing: border-box;
 
-   .drugie a{
-    display:inline-block;
-    text-decoration: none;
-    font-family: arial;
-    font-size: 24px;
-    padding: 10px;
-    }
-.aside a:visited{
+
+}
+
+.sidebar{  
+background-color: #333;
+padding:20px;
+margin-left: auto;
+
+}
+
+.sidebar li {
+text-decoration: none;
+padding: 20px;
+list-style: none;
+margin-left: auto;
+display:flex;
+
+
+}
+
+.sidebar nav li a {
+font-size: 20px;
+text-decoration: none;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: white;
+margin-left: 2px;
+
+}
+.sidebar nav li a:hover{
 color:purple;
 }
 
-#main{
-    display: flex;
-    width: 70%;
-    position:static;
-    margin-left: auto;
 
-}
-.article1 {
+main{
+width: 80%;
+padding: 20px;
+box-sizing: border-box;
 float:left;
-width: 500px;
-margin-left:260px;
-text-align: justify;
-font-family: arial;
-font-size:20px;
-padding:20px;
-
-}
-.article2 {
-float:left;
-width: 500px;
-text-align: justify;
-font-family: arial;
-font-size:20px;
-padding:20px;
-height: 100%;
-}
-
-.article3 {
-float:left;
-width: 500px;
-text-align: justify;
-font-family: arial;
-font-size:20px;
-padding:20px;
 height: 100%;
 
 }
 
-.footer{
-position:absolute;
-bottom:0;
+.container{
+margin: 0 auto;
+float:left;
+
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.section{
+width: 33%;
+box-sizing: border-box;
+padding: 10px;
+
+}
+
+.section h3{
+font-size: 24px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+border: 2px solid #333;
+padding: 20px;
+
+
+}
+
+.section img{
 width: 100%;
-height: 50px;
-background-color: lightgray;
+max-width: 400px;
+height: auto;
+align-items: center;
+
+}
+.section p {
+float: left;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: justify;
+}
+
+/* .stopka{
+box-sizing: border-box;
+background-color: #d3d3d3;
+position: absolute;
+
+}
+.stopka ul{
+display: flex;
+list-style: none;
+align-items: center;
+padding: 20px;
+
+}
+.stopka ul li a {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+text-decoration: none;
+color:#333;
+     */
+}
+
+body::after{
+content: "";
+display: table;
+clear:both;
 }
