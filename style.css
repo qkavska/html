@@ -1,0 +1,279 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+    width: auto;
+}
+
+.main{
+  background: linear-gradient(rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(photos/sunset-1373171_1280.jpg);
+    background-position: center;
+    background-size: cover; 
+    height:fit-content;  
+    height: 100vh;
+}
+.navbar{
+    width: auto;
+    height: 75px;
+    margin:auto;
+}
+
+.icon{
+    width: 20%;
+    float:left;
+    height:70px;
+}
+
+.logo{
+    color:rgba(255,165,58);
+    font-size:35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float:left;
+    padding-top: 10px;
+    margin-top:30px;
+    
+}
+
+.menu{
+    width: 500px;
+    float:left;
+    height: 70px;
+}
+
+ul{
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left:70px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:rgba(255,255,255);
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+ul li a:hover{
+    color:rgba(255,165,58);
+
+}
+
+.search{
+    width: 330px;
+    float:left;
+    margin-left: 270px;
+
+}
+
+.srch{
+    width: 200px;
+    height: 40px;
+    font-family: Arial;
+    background: transparent;
+    border: 2px solid rgba(255,165,58);
+    margin-top:20px;
+    color: rgba(255,255,255);
+    font-size:16px;
+    float:left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+.srch:focus{
+    outline:none;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: rgba(255,165,58);
+    border: none;
+    margin-top:20px;
+    color:#000;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    
+}
+.btn a{
+    color:#000;
+    font-family:Arial;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.btn:focus{
+    outline:none;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+}
+.container .row{
+    display: inline;
+    flex-wrap: wrap;
+    
+}
+.container .first{
+    margin-left:20px;
+    color: #fff;
+    position:absolute;
+    float:left;
+    margin-top: 290px;
+}
+
+
+.first h1{
+    font-family:Arial;
+    font-size: 42px;
+    margin-left:0;
+    padding:20px;
+    letter-spacing: 2px;;
+}
+.first .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.3px;
+    line-height: 30px;
+}
+
+.first .contact{
+    width: 160px;
+    height: 40px;
+    background-color: rgba(255,165,58);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size:18px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+    font-weight: bold;
+
+}
+
+.first .contact a{
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color:#000;
+}
+
+.container .form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.2)50%,rgba(0,0,0,0.2)50%);
+    bottom:120px;
+    right:160px;
+    border-radius: 10px;
+    padding:25px;
+    position:absolute;
+    box-sizing: border-box;
+}
+
+.form h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#fff;
+    font-size: 22px;
+    margin-top: auto;
+    padding:20px;
+
+}
+
+.form input{
+    height: 35px;
+    background: transparent;
+    border: 2px solid rgba(255,165,58);
+    border-top: none;
+    border-right: none;
+    border-left:none;
+    font-size:15px;
+    color:#fff;
+    letter-spacing: 1px;
+    font-family: Arial;
+    margin-top:10px;  
+}
+
+.form input:focus{
+    outline:none;
+}
+
+::placeholder{
+    color:#fff;
+    font-family: Arial;
+}
+
+.btnn{
+    height: 40px;
+    background: rgba(255,165,58);
+    border:none;
+    margin-top:20px;
+    font-size: 18px;
+    font-weight: bold;;
+    border-radius:10px;
+    cursor: pointer;
+    width: 180px;
+    align-items: center;
+}
+
+.btnn a{
+    color:#000;
+    font-family:Arial;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.form .link{
+    font-family: Arial;
+    font-size:17px;
+    text-align: center;
+    padding: 20px;
+    margin:10px;
+}
+
+.form .link a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial;
+    font-size:18px;
+    color:rgba(255,165,58);
+    cursor:pointer;
+    top:10px;
+}
+
+.btn a:hover, .contact a:hover, .btnn a:hover, .link a:hover{
+    color:#fff;
+    transition: 0.2s ease-in-out;
+}
+
+.form .liw{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial;
+    font-size:14px;
+    color:#fff;
+    margin-top:10px;
+
+}
